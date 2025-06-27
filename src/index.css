@@ -25,7 +25,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -92,62 +93,60 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-      .banner {
-        background-image: url('https://cdn.pixabay.com/photo/2021/09/12/07/58/banner-6617553_960_720.jpg');
-        height: 75px;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-      }  
-      .banner h1 {
-        font-size: 2em;
-        margin: 0;
-      }   
-      .widget {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        background-color: #00e448;
-      }
-      .profile {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      .profile img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-      }
-      .search-bar input {
-        width: 100%;
-        padding: 5px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-      .dropdn-btn {
-        padding: 5px;
-        border-radius: 4px;
-        background-color: #f0f0f0
-      }
-      .dropdown {
-    position: relative;
+.banner {
+  background-image: url('https://cdn.pixabay.com/photo/2021/09/12/07/58/banner-6617553_960_720.jpg');
+  height: 75px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}  
+.banner h1 {
+  font-size: 2em;
+  margin: 0;
+}   
+.widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #00e448;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.search-bar input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.dropdn-btn {
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+.dropdown {
+  position: relative;
 }
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    z-index: 1000;
-    display: block;
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
 }
 main {
     flex: 1; /* Allow main to grow and fill the space */
