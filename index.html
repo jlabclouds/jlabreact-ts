@@ -148,6 +148,11 @@ footer {
     </div>
     <div id="root">
       <div class="widget" style="display: flex; align-items: center; justify-content: center;">
+        <div class="dropdown" ng-controller="DropdownController as dropdownCtrl">
+            <button ng-click="dropdownCtrl.toggleMenu('logoMenu')">Index</button>
+            <div ng-show="dropdownCtrl.isMenuOpen('logoMenu')" class="dropdown-menu">
+                <a href="index.html">Home</a>
+            </div>
         <div class="dropdn-btn">
           <a href="#" alt="Index">Index</a>
         </div>
@@ -171,7 +176,7 @@ footer {
             <p>Welcome to JLabs!</p>
             <p>Shareholder / Admin Portal</p>
             <p>Note LTS & EOL.
-                <p>Refresh on quadratic formulas and equations, linear functions, trig and discrete math(probability will help later with hadamard operation and Grovers search problem in Q#)</p>
+                <p>Refresh on quadratic formulas and equations, linear functions, trig and discrete math (probability will help later with hadamard operation and Grovers search problem in Q#)</p>
                 <p>I would like to create a robot such as Johnny 5 or a Reachy 2</p>
         </div>
         
